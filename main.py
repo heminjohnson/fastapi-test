@@ -10,5 +10,5 @@ async def root():
     return {"message": "Hello Hemin"}
 
 @app.get("/ticker/{ticker}")
-def read_item(ticker: int, q: Optional[str] = None):
+def read_item(ticker: str, q: Optional[str] = None):
     return {"ticker": ticker, "q": q, "data": "hemin"}
